@@ -223,7 +223,7 @@ export const getUserGroups = query({
               (split) => split.userId === user._id
             );
             if (userSplit && !userSplit.paid) {
-              balance -= userSplit.amount;
+              balance -=  userSplit.amount;
             }
           }
         });
@@ -260,6 +260,6 @@ export const getUserGroups = query({
       })
     );
 
-    return enhancedGroups;
+    return  ;
   },
 });
